@@ -65,7 +65,7 @@ def not_authorized(error) -> str:
 
 @app.errorhandler(403)
 def forbidden(error) -> str:
-    """ forbidden action handlersda
+    """ forbidden action handler
     """
     return jsonify({"error": "Forbidden"}), 403
 
